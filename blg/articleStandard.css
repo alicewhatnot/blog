@@ -1,0 +1,202 @@
+*{
+    /*this just below ensures that the margin and padding are included in the elements width and height totals*/
+    box-sizing: border-box;
+    /*explained further later but is the boarder - in this case is 0 as this is a black bar at the top*/
+    margin: 0;
+    padding: 100;
+    /*obvious really xx its the font - needs a chrome import i think eventually*/
+
+}
+
+body {
+    background-color: #030303;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.stripe-red {
+    background-color: #721302;
+}
+  
+.stripe-orange {
+    background-color: #a05b00;
+}
+  
+.stripe-cyan {
+    background-color: #118c6e;
+}
+
+.color-stripe {
+    height: 8px;
+}
+
+.article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.article-content {
+    max-width: 40em;            
+    width: 100%;                 
+    padding: 20px;               
+    margin: 20px auto;              
+    border: 1px solid #9a9c7e60;      
+    background-color: #030303;     
+    border-radius: 3px;
+}
+
+.article-content h1 {
+    color: #9a9c7e;
+    font-size: 2em;
+    margin-bottom: 1px;
+    text-align: center;  
+}
+
+.article-content h2 {
+    color: #9a9c7e;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    text-align: center;  
+}
+
+.article-content h3 {
+    color: #9a9c7e;
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.article-content h4 {
+    color: #9a9c7e;
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;  
+}
+
+.article-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #9a9c7ebb;
+    text-align: justify; 
+}
+
+/* this is a bullet point list if im stupid */
+.article-content ul { 
+    font-size: 1em;
+    line-height: 1.6;
+    color: #9a9c7ebb;
+    text-align: justify; 
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center; 
+    font-size: 1rem;
+    position: center;
+    bottom: 20px;
+    color: #9a9c7e94;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    color: #9a9c7e;
+}
+
+.back-to-index {
+    position: absolute;
+    top: 200px; /* Adjust the spacing from the top as needed */
+    left: 10px; /* Adjust the spacing from the right as needed */
+    z-index: 10; /* Keeps it on top of other content */
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #9a9c7e;
+    font-family: "EB Garamond", system-ui;
+}
+
+.back-to-index:hover {
+    color: #fcffd5;
+    transform:scale(1.1)
+}
+
+
+.footer {
+    font-size: 0.5rem;
+    color: #a8a98436;
+    background-color: #030303;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .article-content {
+        margin: 10px auto;
+    }
+
+    .article-content h1 {
+        font-size: 1.5em;
+    }
+
+    .article-content h2 {
+        font-size: 1.1em;
+    }
+
+    .article-content h3 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .article-content h4 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .article-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .article-content {
+        margin : 5px auto;
+    }
+
+    .article-content h1 {
+        font-size: 1.5em;
+    }
+
+    .article-content h2 {
+        font-size: 1.1em;
+    }
+
+    .article-content h3 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    
+    .article-content h4 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .article-content p {
+        font-size: 1em;
+    }
+}

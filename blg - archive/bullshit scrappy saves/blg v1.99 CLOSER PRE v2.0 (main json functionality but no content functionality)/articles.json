@@ -1,0 +1,74 @@
+[
+  {
+    "title": "New Computer! (and putting off coding)",
+    "date": "21-12-24",
+    "description": "Built a new computer - its smaller and faster and quieter!",
+    "image": "/images/terra.JPEG",
+    "colour": "red",
+    "link": "/articles/newComputer"
+  },
+  {
+    "title": "Turing's Cathedral - George Dyson",
+    "date": "14-11-24",
+    "description": "★★★<br>An interesting (but somewhat tedious) insight into the beginnings of computer science",
+    "image": "/images/maniacI.jpg",
+    "colour": "purple",
+    "link": "/articles/turingsCathedral.html"
+  },
+  {
+    "title": "Planned December Update & Other things",
+    "date": "06-11-24",
+    "description": "There are a few big improvements I'd love to make that will wait until the December Holidays",
+    "image": "/images/img7.jpg",
+    "colour": "cyan",
+    "link": "/articles/decUpdate.html"
+  },
+  {
+    "title": "v1.0 release???",
+    "date": "28-10-24",
+    "description": "Wow finally its done (for now) and theres totally no bugs",
+    "image": "/images/v1.0.jpg",
+    "colour": "red",
+    "link": "/articles/release1.0.html"
+  },
+  {
+    "title": "Server online now woooo",
+    "date": "13-10-24",
+    "description": "So i figured out how to host a web server (kinda) and it took ages but here we are - its mikegillbanks.co.uk but you know that already",
+    "image": "/images/serveronline.jpg",
+    "colour": "red",
+    "link": "/articles/ServerOnlineNowWoooo.html"
+  },
+  {
+    "title": "Hello World - Hannah Fry",
+    "date": "06-10-24",
+    "description": "★★★★<br>Id give this 4.5 stars if there was such thing in ascii",
+    "image": "/images/helloWorld.jpg",
+    "colour": "purple",
+    "link": "/articles/HelloWorldBook.html"
+  },
+  {
+    "title": "Neuromancer - William Gibson",
+    "date": "03-10-24",
+    "description": "★★★<br>Thought the descriptions were so cool and awesome but the plot was so hard to follow imo",
+    "image": "/images/Neuromancer.jpg",
+    "colour": "purple",
+    "link": "/articles/Neuromancer.html"
+  },
+  {
+    "title": "First random access!!",
+    "date": ">02-10-24",
+    "description": "And I said I was nearly finished... Just had the heart attack of my life and I think I will forever backup my code before changing anything severe for the rest of my life x",
+    "image": "/images/firstRandomAccess.jpg",
+    "colour": "cyan",
+    "link": "/articles/firstRandomAccess.html"
+  },
+  {
+    "title": "Hello World!",
+    "date": "01-10-24",
+    "description": "Finally close to complete!! v0.1 is basically done I just need to figureout how to host a web server...",
+    "image": "/images/pic12.jpg",
+    "colour": "red",
+    "link": "/articles/HelloWorld!!.html"
+  }
+]

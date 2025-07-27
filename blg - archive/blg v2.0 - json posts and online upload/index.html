@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Gillbanks</title>
+    <meta name="description" content="computer science AAAHHHHHH">
+    <link rel="icon" href="images/pageIcon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=0.001">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+
+<!-- 
+colours!!
+#118c6e cyan
+#d4cc42 yellow
+#721302 red
+#45aaa7 blue
+#9a9c7e beige
+#a05b00 orange
+#6e2b5e purple
+-->
+
+</head>
+<body>
+    <script src="scripts/indexScript.js"></script>
+    <div class="top-line"></div>
+
+    <div class="social-links">
+        <span class="social-text">qmiiikey</span>
+        <a href="https://instagram.com/qmiiikey/" target="_blank" class="instagram-link">
+            <img src="images/instagramIcon.png" alt="Instagram" class="instagram-icon">
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="profile">
+            <img class=backgroundPic src="images/pageBanner.png" alt="pic" id="main__img">
+        </div>
+        <div class="bio">
+            <h1>Mike Gillbanks</h1>
+            <h2>computer science AAAHHHHHH</h2>
+        </div>
+        <div class="tags">
+            <h1>Filter:</h1>
+            <button onclick="filterCards('all')" id="all">All</button>
+            <button onclick="filterCards('stripe-red')" id="project">Projects</button>
+            <button onclick="filterCards('stripe-orange')" id="book">Books</button>
+            <button onclick="filterCards('stripe-cyan')" id="general">General</button>
+        </div>
+    </div>
+    <div class="topline"></div>
+    <div class="articles__bg">
+        <div class="articles"></div>
+        <script src="scripts/loadArticles.js"></script>
+        <script src="scripts/displayArticles.js"></script>
+    </div>
+
+    <div id="adminPasswordMenu">
+        <h1>Admin Sign In</h1>
+        <input id="userPassword" type="text" placeholder="Password">
+        <button id="enterPassword" onclick="enterPswd()">Submit</button>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to top ↑</a>
+    <div class="footer">
+        <h1>v2.0</h1>
+        <h1>made with love and tears</h1>
+        <button onclick="showPasswordMenu()" id="adminSignin">admin</button>
+    </div>
+</body>

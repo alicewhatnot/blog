@@ -1,0 +1,16 @@
+Oh. My. Gosh.
+I did it.
+Hopefully I add a screenshot to this post or as the title (adding a picture to a post is a new thing that I need to learn anyway) but I finally made huge progress in trying to turn the website into a glorified JSON file. This post is more for me really as a documentation of what I did because its the sort of process that I am defiantly going to forget xx
+
+So I am running a node.js server on a server.js file. This server is being contacted somehow (going to be honest I used AI here to cheat so that I can come back later and try understand what was going on but I did not feel like that in the moment) and its being contacted using POST which adds to the JSON file any changes that were made. The new post is created on the admin dashboard that looks very ugly atm but its created there and then appended to a JSON list type thing in the local host storage. Now I thought this would be fine but of course that is not automatically saved to the website's directory for security reasons. Here is where the server being contacted comes in - the now appended to JSON file is transferred back to the website's directory where it is saved. Crucially, when adding the data from a <form> tag in HTML the data is saved using 'posts.unshift' which adds the new article to the top of the JSON file not the bottom for ease of access.
+
+I'm still far from finished and here is the list of things necessary before this works enough: (again mostly for me)
+- The content of the posts are still individual html files. I've added them to the JSON theoretically but the framework for creating the post pages needs to be added.
+- The link needs to be refined to be made somewhat automatically (using the format of Name - Project in 1 word)
+- Images need to be much smaller for efficiency reasons - perhaps stored twice, once for the thumbnail in that resolution and once for the banner in that resolution.
+- Also for efficiency reasons I should look into the pictures only being loaded one or two rows off the screen.
+- The admin dashboard needs to be WAY prettier and maybe add the functionality to edit posts?
+- Like I mentioned earlier add easy image adding to blog text.
+- Sorting the mess that is the blg folder (the directory where this magic is happening)
+
+This project was getting quite stale with the two nights of solid bug fixing but now that I've figured out the core functionality it might not be much longer until I'm done with this! Maybe I'll even consider paying to host this blog again with how cool the changes I've made are. Bye-bye now until I'm back with working code or something less interesting!

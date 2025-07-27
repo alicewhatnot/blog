@@ -1,0 +1,229 @@
+*{
+    /*this just below ensures that the margin and padding are included in the elements width and height totals*/
+    box-sizing: border-box;
+    /*explained further later but is the boarder - in this case is 0 as this is a black bar at the top*/
+    margin: 0;
+    padding: 100;
+    /*obvious really xx its the font - needs a chrome import i think eventually*/
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    margin-bottom: -150px;
+    background-color: #030303;
+}
+
+.bio {
+    position: relative;
+    top: -195px;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-height: 115px;
+}
+
+.bio h1 {
+    font-family: "EB Garamond", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    background-color: hsl(310, 72%, 42%);
+    background-image: linear-gradient(to right, #9a9c7e 0%, #6d6e5a 100%);
+    background-size: 100%;
+    margin-top: 0;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-colour: transparent;
+}
+
+.bio h2 {
+    font-size: 2rem;
+    background-color: #9a9c7e;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-colour: transparent;
+}
+
+.tags {
+    position: relative;
+    display: flex; 
+    margin-left: 20px;
+    width: 355px;
+    gap: 20px;  
+    top: -150px;
+    padding: 2px 5px 0px 5px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #a8a98425;
+}
+
+.tags h1 {
+    font-size: 1.5rem;
+    color: #a8a984;
+}
+.tags h2 {
+    font-size: 1.5rem;
+    color: #721302;
+}
+
+.tags h3 {
+    font-size: 1.5rem;
+    color: #6e2b5e;
+}
+
+.tags h4 {
+    font-size: 1.5rem;
+    color: #118c6e;
+}
+
+.backgroundPic {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+
+.topline {
+    width: 100%;
+    height: 1px; 
+    background-color: #333328; 
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #030303;
+}
+  
+.card {
+    background-color: #030303;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-height: 400px;
+    min-height: 400px;
+    flex-direction: column;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.color-stripe {
+    height: 8px;
+}
+  
+.stripe-red .color-stripe {
+    background-color: #721302;
+}
+  
+.stripe-purple .color-stripe {
+    background-color: #6e2b5e;
+}
+  
+.stripe-cyan .color-stripe {
+    background-color: #118c6e;
+}
+  
+
+.stripe-red {
+    box-shadow: 0 4px 8px rgb(114, 19, 2,0.2); 
+}
+  
+.stripe-red:hover {
+    box-shadow: 0 8px 16px rgb(114, 19, 2,0.2);
+}
+  
+.stripe-purple {
+    box-shadow: 0 4px 8px rgb(110, 43, 94,0.2);
+}
+  
+.stripe-purple:hover {
+    box-shadow: 0 8px 16px rgb(110, 43, 94,0.2);
+}
+  
+.stripe-cyan {
+    box-shadow: 0 4px 8px rgb(17, 140, 110,0.2);
+}
+  
+.stripe-cyan:hover {
+    box-shadow: 0 8px 16px rgb(17, 140, 110,0.2);
+}
+  
+.card-content {
+    padding: 15px;
+}
+  
+.card-content h1 {
+    font-family: "EB Garamond", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #a8a984;
+}
+
+.card-content h2 {
+    font-size: 0.75rem;
+    color: #a8a98496;
+    margin-bottom: 10px;
+}
+  
+.card-content p {
+    font-size: 1em;
+    color: #a8a98493;
+    overflow-y: hidden;
+    max-height: 100px;
+}
+ 
+@media (max-width:700px) {
+    .bio {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .articles {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+  
+@media (max-width: 480px) {
+    .articles {
+      grid-template-columns: 1fr;
+    }
+}
+
+.footer {
+    font-size: 0.5rem;
+    color: #a8a98436;
+    background-color: #030303;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+

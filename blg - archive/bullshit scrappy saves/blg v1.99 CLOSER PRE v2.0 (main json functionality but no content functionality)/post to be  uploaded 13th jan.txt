@@ -1,0 +1,12 @@
+Haha happy late new year!
+
+I did say that I would be back with a post in the new year and with an updated website and I can promise the first half xx
+Maybe there was an awful lot of procrastinating but that did lead to me getting a good amount of other things done in the meantime so it wasn't all wasted time. This is the second evening of properly getting at coding the new update for the website and its looking pretty exciting. Really smart of me - I've switched to using a JSON file to store all of the posts and loading them using JavaScript instead of the all front end that was happening before - ideally (although it isn't working and that's why I gave up and started writing this) all the posts can be written from the website.
+
+Also, in other news, I have taken down the website for what will be a little while as it just started requiring me to pay for it. Normally in the future paying for it should be fine but as it isn't really worth much to anyone else right now taking it down is okay. Since its been taken down I do actually have more of a chance to write random stuff here that I wouldn't with the possibility of people reading it imminently.
+
+(End of transmission) I love getting into the routine of work again after Christmas and that is partially to blame for the waiting before I've started updating this website. I have also been working on developing my useless modeling skills using Fusion 360 to make a cool tray for my A1 Mini 3D printer - the printer has been a blast and I've made all sorts of stupid models like the pi/4 polyhedron and a Klein bottle. It is really fun to make models as its fun to hold mathematics (but I will need a shelf to store them all at this rate)
+
+Obviously this is a way longer post than anything I've uploaded in the past and that is probably to be blamed on the website being taken down. Im still enthused and love updating it as a constant side project and I'm hoping that this blog project continues getting better and better as I do too. 
+
+Happy 2025 xx

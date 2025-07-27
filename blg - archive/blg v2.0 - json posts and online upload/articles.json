@@ -1,0 +1,128 @@
+  [
+  {
+    "Id": 14,
+    "title": "Why Machines Learn - Anil Ananthaswamy",
+    "date": "2025-02-02",
+    "description": "★★★★<br>A great book that has been a great help in starting to think about the maths of AI!",
+    "image": "/images/blogImage14.png",
+    "colour": "orange",
+    "content": "I recently got my first Kindle which has let me read a much wider range of things at much less of a long term cost and this was the first book I read with it! While possibly quite the harsh introduction to Kindle reading it was a great book that achieved all I wanted reading it to achieve.\n\nNot only does it cover the mathematical ideas that make up AI but the book also covers how AI progressed. It is fascinating to see how these actually simple mathematical ideas (most are A-Level maths or below) come together to be extremely useful in such a powerful area of computing. Also, it was interesting to see the progress that AI made and the different types of models that were thought to be the best along the way.\n\nWhile I did say that the maths was simple, the way that it applies to AI does still require some thinking about. I found myself reading the book and then for a few hours after thinking how it works and then finding how elegantly it works. Reading this was technically part of my EPQ but as with most of my EPQ I wanted to understand the topic anyway and the book was a great first look at the mathematics that make up AI and the people involved in it's history.\n\nThe image is a test of me seeing how well a gradient works for random things as book covers tend to not lend themselves to thumbnails as is the case here."
+  },
+  {
+    "Id": 13,
+    "title": "A quick update about the website",
+    "date": "2025-02-01",
+    "description": "So I think for now I'm pretty happy with where we're at",
+    "image": "/images/blogImage13.jpg",
+    "colour": "red",
+    "content": "Today I have spent doing mostly coding (and sadly a little biology) and am pretty happy with the website. Although writing this now I think I might need to dedicate one more coding session to add a little more love to this interface.\n\nI've changed a few things in the main user-facing website though:\n- Added a back to the top feature\n- Added a home arrow which roughly works to indicate but maybe not very well\n- General polish to the admin menu\n\nAfter all of that I'm pretty pleased with where this website is now in both functionality and looks :) I must remember to look into getting it up on the internet again without having to pay for hosting somehow because although I still love the project there is the element of feeling like I am achieving something that came with this being on the internet.\n\nBye for now!"
+  },
+  {
+    "Id": 12,
+    "title": "Once again I dreamt of an easy future.",
+    "date": "2025-01-26",
+    "description": "Yeah so it turns out everything was much harder because of course it was.",
+    "image": "/images/blogImage12.jpg",
+    "colour": "red",
+    "content": "After the posts I made while I've been going at this project this is the first post. I'm typing this using the interface that I set up and it is actually very useful. What I spent most of today doing was trying to figure out how  to allow the thumbnail image to be uploaded from anywhere rather than having to have access to the blog directory. Now that works all that's left is a few tasks from before and a couple more that I have on a post-it in front of me that I can't really be bothered to read (its too dark)\n\nWhile I will confess that this is probably not very near complete, it is feature complete now so whoo! Progress was a lot slower possibly because everything being harder than you thought is rather crushing and also because I have had a cold for two weeks straight now.\n\nMore importantly I can finally get on to more exciting tasks (I wanna venture into hardware) and get my evenings back.\n\nCover image is a Sydler Pi/4 Polyhedron printed with my 3D printer - google the shape it's cool!"
+  },
+  {
+    "Id": 11,
+    "title": "Progress towards JSON bliss.",
+    "date": "2025-01-15",
+    "description": "Oh it is a wonderful star to be reaching for and it will be all mine",
+    "image": "/images/blogImage11.jpg",
+    "colour": "red",
+    "content": "Oh. My. Gosh.\nI did it.\nHopefully I add a screenshot to this post or as the title (adding a picture to a post is a new thing that I need to learn anyway) but I finally made huge progress in trying to turn the website into a glorified JSON file. This post is more for me really as a documentation of what I did because its the sort of process that I am defiantly going to forget xx\n\nSo I am running a node.js server on a server.js file. This server is being contacted somehow (going to be honest I used AI here to cheat so that I can come back later and try understand what was going on but I did not feel like that in the moment) and its being contacted using POST which adds to the JSON file any changes that were made. The new post is created on the admin dashboard that looks very ugly atm but its created there and then appended to a JSON list type thing in the local host storage. Now I thought this would be fine but of course that is not automatically saved to the website's directory for security reasons. Here is where the server being contacted comes in - the now appended to JSON file is transferred back to the website's directory where it is saved. Crucially, when adding the data from a form tag in HTML the data is saved using 'posts.unshift' which adds the new article to the top of the JSON file not the bottom for ease of access.\n\nI'm still far from finished and here is the list of things necessary before this works enough: (again mostly for me)\n- The content of the posts are still individual html files. I've added them to the JSON theoretically but the framework for creating the post pages needs to be added.\n- The link needs to be refined to be made somewhat automatically (using the format of Name - Project in 1 word)\n- Images need to be much smaller for efficiency reasons - perhaps stored twice, once for the thumbnail in that resolution and once for the banner in that resolution.\n- Also for efficiency reasons I should look into the pictures only being loaded one or two rows off the screen.\n- The admin dashboard needs to be WAY prettier and maybe add the functionality to edit posts?\n- Like I mentioned earlier add easy image adding to blog text.\n- Sorting the mess that is the blg folder (the directory where this magic is happening)\n\nThis project was getting quite stale with the two nights of solid bug fixing but now that I've figured out the core functionality it might not be much longer until I'm done with this! Maybe I'll even consider paying to host this blog again with how cool the changes I've made are. Bye-bye now until I'm back with working code or something less interesting!"
+  },
+  {
+    "Id": 10,
+    "title": "Haha happy late new year!",
+    "date": "2025-01-13",
+    "description": "I did say that I would be back with a post in the new year and with an updated website and I can promise the first half xx",
+    "image": "/images/blogImage10.jpg",
+    "colour": "cyan",
+    "content": "I'm back! Maybe there was an awful lot of procrastinating but that did lead to me getting a good amount of other things done in the meantime so it wasn't all wasted time. This is the second evening of properly getting at coding the new update for the website and its looking pretty exciting. Really smart of me - I've switched to using a JSON file to store all of the posts and loading them using JavaScript instead of the all front end that was happening before - ideally (although it isn't working and that's why I gave up and started writing this) all the posts can be written from the website.\n\nAlso, in other news, I have taken down the website for what will be a little while as it just started requiring me to pay for it. Normally in the future paying for it should be fine but as it isn't really worth much to anyone else right now taking it down is okay. Since its been taken down I do actually have more of a chance to write random stuff here that I wouldn't with the possibility of people reading it imminently.\n\nI love getting into the routine of work again after Christmas and that is partially to blame for the waiting before I've started updating this website. I have also been working on developing my useless modeling skills using Fusion 360 to make a cool tray for my A1 Mini 3D printer - the printer has been a blast and I've made all sorts of stupid models like the pi/4 polyhedron and a Klein bottle. It is really fun to make models as its fun to hold mathematics (but I will need a shelf to store them all at this rate)\n\nObviously this is a way longer post than anything I've uploaded in the past and that is probably to be blamed on the website being taken down. I'm still enthused and love updating it as a constant side project and I'm hoping that this blog project continues getting better and better as I do too. \n\nHappy 2025 xx"
+  },
+  {
+    "Id": 9,
+    "title": "New Computer! (and putting off coding)",
+    "date": "21-12-24",
+    "description": "Built a new computer - its smaller and faster and quieter!",
+    "image": "/images/blogImage9.jpg",
+    "colour": "red",
+    "content": "So it's been a while! A bit busy working on multiple essays and generally working more towards grades than projects in my own free time recently. This is however being written on a new computer that I built last week – it's an ITX case (The Fractal Terra) with a 13th gen i5 CPU and an RTX4060 carried over from my last PC.\n\nWhile the 13600KF is just over two years old, its performance is in line with the generation newer (around 4% worse) and even performs better than Intel's latest chips that are the product of them focusing on power efficiency. I could've gone AMD but at the price that I got the 13600KF for, it was well worth it (£170).\n\nBeing that this computer is so much smaller than my last (40L down to 10), I assumed there would be problems with thermals. However, while I have had to limit the CPU to 180W peak, 160W sustained, that is still far above its rated power draw and is kept virtually silent at 40°C at idle with only a minimal less than 1% performance drop compared to stock under full-core loads.\n\nI am somewhat working on making the website easier to post to but since it seems such a bigger task compared to usual, I'm quite apparently putting it off... I should finish updating the website at least before the start of school again, so I'll be back in another post then in the new year!"
+  },
+  {
+    "Id": 8,
+    "title": "Turing's Cathedral - George Dyson",
+    "date": "14-11-24",
+    "description": "★★★<br>An interesting (but somewhat tedious) insight into the beginnings of computer science",
+    "image": "/images/blogImage8.jpg",
+    "colour": "orange",
+    "content": "This book was read over the end of the half term and this review (it's not really a review) is a little late because of exams and things, but it's given me time to think about this review more. To get past the fact that I gave it 3 stars first, it was quite a boring read to me. Some parts where the author goes into detail about history that I did not find entirely relevant to the general topic felt like they dragged on a bit. However, between these spells, there was a fascinating insight into early computer science. A lot of the early background information I found more interesting possibly because it built on the history present in *Oppenheimer* (the movie) – by Christopher Nolan. *Turing's Cathedral* built on the loose history (what can you expect from a historical drama) to show how key the usecase of calculating the effect of explosions was to the research and building of the computer. It made me think that quite possibly without the atomic race during the war and the continuing race to build a bigger bomb, computers would never have existed. The book opened a whole can of worms in me thinking about this part of the history of computer science – a subject that previously I don't think I would ever have considered I would be remotely interested in.\n\nContrary to the title (Although Alan Turing was mentioned a lot) the book also focused on the life of John Von Neumann which was fascinating. The author spoke of his interesting questions rather than the usual – how fast does it go? (which is totally what I'd ask). Studying this man really helped the picture of how computer science came to be.\n\nMy last remark is how funny it is that even in the early days of computer science, according to the author, the people working on computers were said to be engineers by the mathematics department but the mathematics department didn't want anything to do with them as computing apparently was not mathematics (it totally is). So even though it was kind of boring at the time, I'm glad I read it.\n\nImage from Los Alamos National Laboratory on Facebook."
+  },
+  {
+    "Id": 7,
+    "title": "Planned December Update & Other things",
+    "date": "06-11-24",
+    "description": "There are a few big improvements I'd love to make that will wait until the December Holidays",
+    "image": "/images/blogImage7.jpg",
+    "colour": "cyan",
+    "content": "Now that the website is actually somewhat reliably running and in a complete state, there is a lot that I have wanted to add since the start without much of an idea on how to start at the time. Some things I wanna add:\n\n- An admin login at the bottom where the following can be edited online rather than in the back-end like I am now\n- Most importantly adding new posts\n- Home button instead of relying on browser based navigation tools\n- Change the blog icon\n- Make the description on Google better (I thought this was fixed :P)\n- Changing the colour scheme (this involves changing colours from a specified colour to a variable)\n- Changing anything else like icons, banners, and the bio\n- And finally, hopefully making HTTPS work\n\nThis will let me get better at JavaScript hopefully, as a lot of this is script-based, not just HTML and CSS.\n\n### Other project related things:\n\nHopefully at Christmas, I'll be able to buy a 3D printer (and a Klein bottle) to be able to build neat lil projects like one I've seen where it's a waveform visualisation (it might not actually be called that), but like the ones you see on YouTube and in video editors.\n\nThat's it for now!"
+  },
+  {
+    "Id": 6,
+    "title": "v1.0 release???",
+    "date": "28-10-24",
+    "description": "Wow finally its done (for now) and theres totally no bugs",
+    "image": "/images/blogImage6.jpg",
+    "colour": "red",
+    "content": "Okay, this is the final post for now about this project hopefully. I should be able to release v1.0 now after a lil while of pain xx – A lot of the time waiting was just school and lack of inspiration to continue, but there were a few fixes I've done to be ready for full release:\n\n- Added Instagram link\n- Added filters to what was just a key\n- Fixed issue where key would go over the page on mobile\n- Added an icon for the Google tab menu\n- Added a description on the Google search page\n\nThat final fix I don't know if it has worked yet because I'll have to wait until Google updates their servers or something idk. That and a few other things means there may be a few bug fixes in the coming weeks but this blog is still feature complete now woohoo!"
+  },
+  {
+    "Id": 5,
+    "title": "Server online now woooo",
+    "date": "13-10-24",
+    "description": "So i figured out how to host a web server (kinda) and it took ages but here we are - its mikegillbanks.co.uk but you know that already",
+    "image": "/images/blogImage5.jpg",
+    "colour": "red",
+    "content": "Oh my goodness that was a pain xx\n\nSo anyway, I looked into hosting the website on the laptop that is just sitting there in the corner of my room and tried a method I found from a YouTube video. I got so far in until realizing when hosting through WordPress there seems to be no way of just uploading the files with the code you wrote. (It's harder to host your own than make it online???) So with that out the window, I tried simply using a static IP but apparently that isn't available for my home's internet.\n\n### The solution I have working now:\n\nI am using Amazon's web server hosting system Lightsail – this and Hostinger seemed to be the two clear options with Hostinger being cheaper but needing an upfront payment for 4 years while Amazon is 5 dollars a month. On Lightsail, I have an Ubuntu instance running Apache2 which just uses a directory copied across from my PC using FileZilla (the key for this being rejected being one of two times I needed to delete the instance and retry). Looking back (as long as it's working) everything I did does seem quite straightforward, so now I might finally be able to focus on pushing updates to the website and streamlining updating pages in my free time instead of looking into the canyon of pain and suffering that is web hosting."
+  },
+  {
+    "Id": 4,
+    "title": "Hello World - Hannah Fry",
+    "date": "06-10-24",
+    "description": "★★★★<br>Id give this 4.5 stars if there was such thing in ascii",
+    "image": "/images/blogImage4.jpg",
+    "colour": "orange",
+    "content": "Wooo! Good book! I love Hannah Fry so that was going to be obvious. I was probably first introduced to her in my sweet little careless fun maths lessons of year 7, oblivious to the stressful work ahead – we watched Numberphile videos (YouTube) and she must have come up somewhere but I specifically remember her optimal way to cut a cake video (which now and then she still makes food-related maths videos). Now I watch her when she pops up on Matt Parker's channel now and then.\n\nBack to the book – it was great, the chapters gave a wonderful insight into how much relevance algorithms have in our daily lives and how they can actually have quite the impact, good or bad. I especially found the chapter on data brokers interesting due to my rough knowledge of the subject but without knowing the detail. This fascination she has brought to me I am planning on attempting to pass on to an audience through a TEDx talk but I doubt I'll get as interesting as her (interesting at all will be a feat).\n\nAs a first read in a series of me reading books adjacent to computer science but focusing on the philosophical and moral aspects of the subject, it was a wonderful start with as fun an introduction as possible and has made me begin to understand more of the philosophy that I was interested in behind the way we interact with technology."
+  },
+  {
+    "Id": 3,
+    "title": "Neuromancer - William Gibson",
+    "date": "03-10-24",
+    "description": "★★★<br>Thought the descriptions were so cool and awesome but the plot was so hard to follow imo",
+    "image": "/images/blogImage3.jpg",
+    "colour": "orange",
+    "content": "It was such a weird book, like so many things happened. It was like the author was just 'what can I get away with now that this is set in the future so basically anything can happen?' I think that was why the plot felt so random, although it didn't have my full attention sometimes so that might have helped xx.\n\nIt was fun though to see what the 'cyberspace' would look like to someone in 1984 as a lot of the futuristic ideas actually seemed pretty close to us now. Also, the fact that it inspired *The Matrix* and also one of my favourite games (*Cyberpunk 2077*) was both clear and fun to see.\n\nCover image is from one of the covers."
+  },
+  {
+    "Id": 2,
+    "title": "First random access!!",
+    "date": "02-10-24",
+    "description": "And I said I was nearly finished... Just had the heart attack of my life and I think I will forever backup my code before changing anything severe for the rest of my life x",
+    "image": "/images/blogImage2.jpg",
+    "colour": "cyan",
+    "content": "Maybe the whole random access thing can be the name for this blog diary thing?\n\nAnyway, so last time I was typing something here I tried saying how this was nearly finished (last night) and while that might still be true, the result of tonight was me making a stupid error and thinking that my code had a root flaw causing it to just not work xx I referenced the wrong css file. Because I copied across html files. This has become quite a fixation of mine, so perhaps I might figure a way of hosting this on my domain by tomorrow night?\n\nI'm quite impressed with myself really to be able to get this far in html and css within a week (from 0 to a website) and this place will be updated as I get better hopefully. For now, goodbye!!"
+  },
+  {
+    "Id": 1,
+    "title": "Hello World!",
+    "date": "01-10-24",
+    "description": "Finally close to complete!! v0.1 is basically done I just need to figureout how to host a web server...",
+    "image": "/images/blogImage1.jpg",
+    "colour": "red",
+    "content": "Finally close to complete!! v0.1 is basically done I just need to figure out how to host a web server...\n\nFirst version of this post was 30-09-24 and was just me screaming about how much of a learning curve this was xx\n\nAnyway, for now, I'm basically done, but in the future, as I get better, I can implement more features and polish it up a bit.\n\nThe image used is from some image site Pexels – it was a placeholder picture until now, but it will be forever there as it has been stapled into my brain, so I may as well.\n\nReading this back, I see now a priority is changing the font before publishing."
+  }
+]

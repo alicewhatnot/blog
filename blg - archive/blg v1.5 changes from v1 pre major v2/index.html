@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Gillbanks</title>
+    <meta name="description" content="Hapless enthusiast in all things computer science.">
+    <link rel="icon" href="images/iconcircle.png">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=0.001">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+<!-- 
+colours!!
+#118c6e cyan
+#d4cc42 yellow
+#721302 red
+#45aaa7 blue
+#9a9c7e beige
+#a05b00 orange
+#6e2b5e purple
+-->
+
+</head>
+<body>
+    <script src="indexScript.js"></script>
+    <div class="top-line"></div>
+
+    <div class="social-links">
+        <span class="social-text">qmiiikey</span>
+        <a href="https://instagram.com/qmiiikey/" target="_blank" class="instagram-link">
+            <img src="images/insta.png" alt="Instagram" class="instagram-icon">
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="profile">
+            <img class=backgroundPic src="images/banner3.png" alt="pic" id="main__img">
+        </div>
+        <div class="bio">
+            <h1>Mike Gillbanks</h1>
+            <h2>computer science AAAHHHHHH</h2>
+        </div>
+        <div class="tags">
+            <h1>Filter:</h1>
+            <button onclick="filterCards('all')" id="all">All</button>
+            <button onclick="filterCards('stripe-red')" id="project">Projects</button>
+            <button onclick="filterCards('stripe-purple')" id="book">Books</button>
+            <button onclick="filterCards('stripe-cyan')" id="general">General</button>
+        </div>
+    </div>
+    <div class="topline"></div>
+    <div class="articles__bg">
+        <div class="articles">
+            <!-- card stripe colour and article html reference -->
+            <div class="card stripe-red" onclick="window.location.href='/articles/newComputer';">
+                <!-- thumbnail image -->
+                <img src="/images/terra.JPEG" alt="Blog Image 9">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>New Computer! (and putting off coding)</h1>
+                    <!-- date -->
+                    <h2>21-12-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p> Built a new computer - its smaller and faster and quieter! </p>
+                </div>
+            </div>
+            <div class="card stripe-purple" onclick="window.location.href='/articles/turingsCathedral.html';">
+                <!-- thumbnail image -->
+                <img src="/images/maniacI.jpg" alt="Blog Image 8">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Turing's Cathedral - George Dyson</h1>
+                    <!-- date -->
+                    <h2>14-11-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>★★★<br>An interesting (but somewhat tedious) insight into the beginnings of computer science </p>
+                </div>
+            </div>
+            <div class="card stripe-cyan" onclick="window.location.href='/articles/decUpdate.html';">
+                <img src="/images/img7.jpg" alt="Blog Image 7">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Planned December Update & Other things</h1>
+                    <!-- date -->
+                    <h2>06-11-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>There are a few big improvements I'd love to make that will wait until the December Holidays
+                  </p>
+                </div>
+            </div>
+            <div class="card stripe-red" onclick="window.location.href='/articles/release1.0.html';">
+                <img src="/images/v1.0.jpg" alt="Blog Image 6">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>v1.0 release???</h1>
+                    <!-- date -->
+                    <h2>28-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>Wow finally its done (for now) and theres totally no bugs
+                  </p>
+                </div>
+            </div>
+            <div class="card stripe-red" onclick="window.location.href='/articles/ServerOnlineNowWoooo.html';">
+                <img src="/images/serveronline.jpg" alt="Blog Image 5">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Server online now woooo</h1>
+                    <!-- date -->
+                    <h2>13-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>So i figured out how to host a web server (kinda) and it took ages but here we are - 
+                        its mikegillbanks.co.uk but you know that already
+                  </p>
+                </div>
+            </div>
+            <div class="card stripe-purple" onclick="window.location.href='/articles/HelloWorldBook.html';">
+                <img src="/images/helloWorld.jpg" alt="Blog Image 4">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Hello World - Hannah Fry</h1>
+                    <!-- date -->
+                    <h2>06-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>★★★★<br>Id give this 4.5 stars if there was such thing in ascii
+                </div>
+            </div>
+            <div class="card stripe-purple" onclick="window.location.href='/articles/Neuromancer.html';">
+                <img src="/images/Neuromancer.jpg" alt="Blog Image 2">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Neuromancer - William Gibson</h1>
+                    <!-- date -->
+                    <h2>03-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>★★★<br>Thought the descriptions were so cool and awesome but the plot was so hard to follow imo</p>
+                </div>
+            </div>
+            <div class="card stripe-cyan" onclick="window.location.href='/articles/firstRandomAccess.html';">
+                <img src="/images/firstRandomAccess.jpg" alt="Blog Image 3">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>First random access!!</h1>
+                    <!-- date -->
+                    <h2>02-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>And I said I was nearly finished... Just had the heart attack of my life and I think I will forever backup my code 
+                        before changing anything severe for the rest of my life x
+                    </p>
+                </div>
+            </div>
+            <div class="card stripe-red" onclick="window.location.href='/articles/HelloWorld!!.html';">
+                <img src="/images/pic12.jpg" alt="Blog Image 1">
+                <div class="color-stripe"></div>
+                <div class="card-content">
+                    <!-- title -->
+                    <h1>Hello World!</h1>
+                    <!-- date -->
+                    <h2>01-10-24</h2>
+                    <!-- summary of article - be careful to check if not too long -->
+                    <p>Finally close to complete!! v0.1 is basically done I just need to figure
+                    out how to host a web server...
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="adminPasswordMenu" style="display: none;">
+        <h1>Hello me! Sign in here!</h1>
+        <input id="userPassword" type="text" placeholder="Password">
+        <button onclick="enterPswd()">Submit</button>
+    </div>
+    <div class="footer">
+        <h1>v1.0</h1>
+        <h1>made with love and tears</h1>
+        <button onclick="showPasswordMenu()" id="adminSignin">admin</button>
+    </div>
+</body>

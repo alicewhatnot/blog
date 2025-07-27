@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Gillbanks</title>
+    <meta name="description" content="Hapless enthusiast in all things computer science.">
+    <link rel="icon" href="images/iconcircle.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+<!-- 
+colours!!
+#118c6e cyan
+#d4cc42 yellow
+#721302 red
+#45aaa7 blue
+#9a9c7e beige
+#a05b00 orange
+#6e2b5e purple
+-->
+
+</head>
+<body>
+
+    <div class="addPost">
+        <h1>★ Add a blog form ★</h1>
+        <form id="addPostForm"><br>
+            <textarea id="title" rows="1" cols="80" required placeholder="Enter post title here"></textarea><br>
+            <textarea id="description" required rows="1" cols="80" placeholder="Enter post description here"></textarea></label><br>
+            <textarea id="content" rows="20" cols="80" required placeholder="Enter post content here (In markdown)"></textarea></label><br><br>
+            <label>Enter image <input type="file" id="image" required></label><br><br>
+            <label>Date: <input type="date" id="date" required></label><br><br>
+            <label>Category: 
+                <select id="colour" required>
+                    <option value="red">Projects</option>
+                    <option value="purple">Books</option>
+                    <option value="cyan">General</option>
+                </select>
+            </label><br><br>
+            <button type="submit">Add Post</button>
+        </form>
+    </div>
+
+    <script src="scripts/editArticles.js"></script>
+
+</body>
